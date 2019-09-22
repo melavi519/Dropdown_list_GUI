@@ -22,7 +22,8 @@ Label(m,text="Select Application name :",bg="grey").grid(row = 1, column =1)
 w.grid(row=1,column=5)
 def change_dropdown(*args): 
     if(v.get()!="Type"):
-        subprocess.Popen(s.get(v.get()))      
+        subprocess.Popen(s.get(v.get()))
+        
     
 v.trace('w', change_dropdown)
 m.mainloop()
